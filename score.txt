@@ -1,0 +1,629 @@
+*** Basic ***
+Starting tiny on 15221
+Starting proxy on 30964
+1: home.html
+   Fetching ./tiny/home.html into ./.proxy using the proxy
+   Fetching ./tiny/home.html into ./.noproxy directly from Tiny
+   Comparing the two files
+   Success: Files are identical.
+2: csapp.c
+   Fetching ./tiny/csapp.c into ./.proxy using the proxy
+   Fetching ./tiny/csapp.c into ./.noproxy directly from Tiny
+   Comparing the two files
+   Success: Files are identical.
+3: tiny.c
+   Fetching ./tiny/tiny.c into ./.proxy using the proxy
+   Fetching ./tiny/tiny.c into ./.noproxy directly from Tiny
+   Comparing the two files
+   Success: Files are identical.
+4: godzilla.jpg
+   Fetching ./tiny/godzilla.jpg into ./.proxy using the proxy
+   Fetching ./tiny/godzilla.jpg into ./.noproxy directly from Tiny
+   Comparing the two files
+   Success: Files are identical.
+5: tiny
+   Fetching ./tiny/tiny into ./.proxy using the proxy
+   Fetching ./tiny/tiny into ./.noproxy directly from Tiny
+   Comparing the two files
+   Success: Files are identical.
+Killing tiny and proxy
+Basic: 40 / 40
+
+*** Concurrency ***
+Starting tiny on port 1502
+Starting proxy on port 13576
+Starting the blocking NOP server on port 31181
+Trying to fetch a file from the blocking nop-server
+Fetching ./tiny/home.html into ./.noproxy directly from Tiny
+Fetching ./tiny/home.html into ./.proxy using the proxy
+Checking whether the proxy fetch succeeded
+Success: Was able to fetch tiny/home.html from the proxy.
+Killing tiny, proxy, and nop-server
+Concurrency: 15 / 15
+
+*** Cache ***
+Starting tiny on port 23700
+Starting proxy on port 26124
+Fetching ./tiny/tiny.c into ./.proxy using the proxy
+Fetching ./tiny/home.html into ./.proxy using the proxy
+Fetching ./tiny/csapp.c into ./.proxy using the proxy
+Killing tiny
+Fetching a cached copy of ./tiny/home.html into ./.noproxy
+Failure: Was not able to fetch tiny/home.html from the proxy cache.
+Killing proxy
+Cache: 0 / 15
+
+*** Real Pages ***
+Starting proxy on port 33202
+Starting tiny on 27501
+Setup done, running webdriver
+= launching chrome 1609344846.1809323
+= loading page 1609344847.5848994
+url: http://127.0.0.1.nip.io:27501/browser-testbench/index.html
+title: Browser Testbench
+= running test 1609344848.3054156
+listening..
+Accepted connection from (localhost, 39630)
+listening..
+Accepted connection from (localhost, 39632)
+listening..
+Accepted connection from (localhost, 39636)
+listening..
+Accepted connection from (localhost, 39640)
+listening..
+Accepted connection from (localhost, 39646)
+listening..
+Accepted connection from (localhost, 39652)
+listening..
+Accepted connection from (localhost, 39656)
+listening..
+Accepted connection from (localhost, 39658)
+listening..
+Accepted connection from (localhost, 39660)
+listening..
+Accepted connection from (localhost, 39668)
+listening..
+Accepted connection from (localhost, 39672)
+listening..
+Accepted connection from (localhost, 39676)
+listening..
+Accepted connection from (localhost, 39680)
+listening..
+Accepted connection from (localhost, 39684)
+listening..
+Accepted connection from (localhost, 39688)
+listening..
+Accepted connection from (localhost, 39692)
+listening..
+Accepted connection from (localhost, 39696)
+listening..
+Accepted connection from (localhost, 39700)
+listening..
+Accepted connection from (localhost, 39704)
+listening..
+Accepted connection from (localhost, 39708)
+listening..
+Accepted connection from (localhost, 39712)
+listening..
+Accepted connection from (localhost, 39716)
+listening..
+Accepted connection from (localhost, 39720)
+listening..
+Accepted connection from (localhost, 39724)
+listening..
+Accepted connection from (localhost, 39728)
+listening..
+Accepted connection from (localhost, 39732)
+listening..
+Accepted connection from (localhost, 39736)
+listening..
+Accepted connection from (localhost, 39740)
+listening..
+Accepted connection from (localhost, 39744)
+listening..
+Accepted connection from (localhost, 39748)
+listening..
+Accepted connection from (localhost, 39752)
+listening..
+Accepted connection from (localhost, 39756)
+listening..
+Accepted connection from (localhost, 39760)
+listening..
+Accepted connection from (localhost, 39764)
+listening..
+Accepted connection from (localhost, 39768)
+listening..
+Accepted connection from (localhost, 39772)
+listening..
+Accepted connection from (localhost, 39776)
+listening..
+Accepted connection from (localhost, 39780)
+listening..
+Accepted connection from (localhost, 39784)
+listening..
+Accepted connection from (localhost, 39788)
+listening..
+Accepted connection from (localhost, 39792)
+listening..
+Accepted connection from (localhost, 39796)
+listening..
+Accepted connection from (localhost, 39800)
+listening..
+Accepted connection from (localhost, 39804)
+listening..
+Accepted connection from (localhost, 39808)
+listening..
+Accepted connection from (localhost, 39812)
+listening..
+Accepted connection from (localhost, 39816)
+listening..
+Accepted connection from (localhost, 39820)
+listening..
+Accepted connection from (localhost, 39824)
+listening..
+Accepted connection from (localhost, 39828)
+listening..
+Accepted connection from (localhost, 39832)
+listening..
+Accepted connection from (localhost, 39836)
+listening..
+Accepted connection from (localhost, 39840)
+listening..
+Accepted connection from (localhost, 39844)
+listening..
+Accepted connection from (localhost, 39848)
+listening..
+Accepted connection from (localhost, 39852)
+listening..
+Accepted connection from (localhost, 39856)
+listening..
+Accepted connection from (localhost, 39860)
+listening..
+Accepted connection from (localhost, 39864)
+listening..
+Accepted connection from (localhost, 39868)
+listening..
+Accepted connection from (localhost, 39872)
+listening..
+Accepted connection from (localhost, 39876)
+listening..
+Accepted connection from (localhost, 39880)
+listening..
+Accepted connection from (localhost, 39884)
+listening..
+Accepted connection from (localhost, 39888)
+listening..
+Accepted connection from (localhost, 39892)
+listening..
+Accepted connection from (localhost, 39896)
+listening..
+Accepted connection from (localhost, 39900)
+listening..
+Accepted connection from (localhost, 39904)
+listening..
+Accepted connection from (localhost, 39908)
+listening..
+Accepted connection from (localhost, 39912)
+listening..
+Accepted connection from (localhost, 39916)
+listening..
+Accepted connection from (localhost, 39920)
+listening..
+Accepted connection from (localhost, 39924)
+listening..
+Accepted connection from (localhost, 39928)
+listening..
+Accepted connection from (localhost, 39932)
+listening..
+Accepted connection from (localhost, 39936)
+listening..
+Accepted connection from (localhost, 39940)
+listening..
+Accepted connection from (localhost, 39944)
+listening..
+Accepted connection from (localhost, 39948)
+listening..
+Accepted connection from (localhost, 39952)
+listening..
+Accepted connection from (localhost, 39956)
+listening..
+Accepted connection from (localhost, 39960)
+listening..
+Accepted connection from (localhost, 39964)
+listening..
+Accepted connection from (localhost, 39968)
+listening..
+Accepted connection from (localhost, 39972)
+listening..
+Accepted connection from (localhost, 39976)
+listening..
+Accepted connection from (localhost, 39980)
+listening..
+Accepted connection from (localhost, 39984)
+listening..
+Accepted connection from (localhost, 39988)
+listening..
+Accepted connection from (localhost, 39992)
+listening..
+Accepted connection from (localhost, 39996)
+listening..
+Accepted connection from (localhost, 40000)
+listening..
+Accepted connection from (localhost, 40004)
+listening..
+Accepted connection from (localhost, 40008)
+listening..
+Accepted connection from (localhost, 40012)
+listening..
+Accepted connection from (localhost, 40016)
+listening..
+Accepted connection from (localhost, 40020)
+listening..
+Accepted connection from (localhost, 40024)
+listening..
+Accepted connection from (localhost, 40028)
+listening..
+Accepted connection from (localhost, 40032)
+listening..
+Accepted connection from (localhost, 40036)
+listening..
+Accepted connection from (localhost, 40040)
+listening..
+Accepted connection from (localhost, 40044)
+listening..
+Accepted connection from (localhost, 40048)
+listening..
+Accepted connection from (localhost, 40052)
+listening..
+Accepted connection from (localhost, 40056)
+listening..
+Accepted connection from (localhost, 40060)
+listening..
+Accepted connection from (localhost, 40064)
+listening..
+Accepted connection from (localhost, 40068)
+listening..
+Accepted connection from (localhost, 40072)
+listening..
+Accepted connection from (localhost, 40076)
+listening..
+Accepted connection from (localhost, 40078)
+listening..
+Accepted connection from (localhost, 40084)
+listening..
+Accepted connection from (localhost, 40086)
+listening..
+Accepted connection from (localhost, 40090)
+listening..
+Accepted connection from (localhost, 40092)
+listening..
+Accepted connection from (localhost, 40094)
+listening..
+Accepted connection from (localhost, 40096)
+listening..
+Accepted connection from (localhost, 40098)
+listening..
+Accepted connection from (localhost, 40100)
+listening..
+Accepted connection from (localhost, 40116)
+listening..
+Accepted connection from (localhost, 40118)
+listening..
+Accepted connection from (localhost, 40120)
+listening..
+Accepted connection from (localhost, 40122)
+listening..
+Accepted connection from (localhost, 40124)
+listening..
+Accepted connection from (localhost, 40126)
+listening..
+Accepted connection from (localhost, 40140)
+listening..
+Accepted connection from (localhost, 40144)
+listening..
+Accepted connection from (localhost, 40146)
+listening..
+Accepted connection from (localhost, 40152)
+listening..
+Accepted connection from (localhost, 40156)
+listening..
+Accepted connection from (localhost, 40158)
+listening..
+Accepted connection from (localhost, 40160)
+listening..
+Accepted connection from (localhost, 40162)
+listening..
+Accepted connection from (localhost, 40164)
+listening..
+Accepted connection from (localhost, 40176)
+listening..
+Accepted connection from (localhost, 40178)
+listening..
+Accepted connection from (localhost, 40182)
+listening..
+Accepted connection from (localhost, 40184)
+listening..
+Accepted connection from (localhost, 40188)
+listening..
+Accepted connection from (localhost, 40190)
+listening..
+Accepted connection from (localhost, 40194)
+listening..
+Accepted connection from (localhost, 40204)
+listening..
+Accepted connection from (localhost, 40206)
+listening..
+Accepted connection from (localhost, 40212)
+listening..
+Accepted connection from (localhost, 40216)
+listening..
+Accepted connection from (localhost, 40220)
+listening..
+Accepted connection from (localhost, 40222)
+listening..
+Accepted connection from (localhost, 40224)
+listening..
+Accepted connection from (localhost, 40226)
+listening..
+Accepted connection from (localhost, 40228)
+listening..
+Accepted connection from (localhost, 40240)
+listening..
+Accepted connection from (localhost, 40244)
+listening..
+Accepted connection from (localhost, 40248)
+listening..
+Accepted connection from (localhost, 40250)
+listening..
+Accepted connection from (localhost, 40252)
+listening..
+Accepted connection from (localhost, 40254)
+listening..
+Accepted connection from (localhost, 40258)
+listening..
+Accepted connection from (localhost, 40268)
+listening..
+Accepted connection from (localhost, 40270)
+listening..
+Accepted connection from (localhost, 40274)
+listening..
+Accepted connection from (localhost, 40276)
+listening..
+Accepted connection from (localhost, 40284)
+listening..
+Accepted connection from (localhost, 40288)
+listening..
+Accepted connection from (localhost, 40292)
+listening..
+Accepted connection from (localhost, 40296)
+listening..
+Accepted connection from (localhost, 40298)
+listening..
+Accepted connection from (localhost, 40300)
+listening..
+Accepted connection from (localhost, 40308)
+listening..
+Accepted connection from (localhost, 40312)
+listening..
+Accepted connection from (localhost, 40314)
+listening..
+Accepted connection from (localhost, 40316)
+listening..
+Accepted connection from (localhost, 40324)
+listening..
+Accepted connection from (localhost, 40328)
+listening..
+Accepted connection from (localhost, 40330)
+listening..
+Accepted connection from (localhost, 40332)
+listening..
+Accepted connection from (localhost, 40340)
+listening..
+Accepted connection from (localhost, 40344)
+listening..
+Accepted connection from (localhost, 40346)
+listening..
+Accepted connection from (localhost, 40352)
+listening..
+Accepted connection from (localhost, 40356)
+listening..
+Accepted connection from (localhost, 40360)
+listening..
+Accepted connection from (localhost, 40364)
+listening..
+Accepted connection from (localhost, 40368)
+listening..
+Accepted connection from (localhost, 40372)
+listening..
+Accepted connection from (localhost, 40376)
+listening..
+Accepted connection from (localhost, 40380)
+listening..
+Accepted connection from (localhost, 40384)
+listening..
+Accepted connection from (localhost, 40388)
+listening..
+Accepted connection from (localhost, 40392)
+listening..
+Accepted connection from (localhost, 40396)
+listening..
+Accepted connection from (localhost, 40400)
+listening..
+Accepted connection from (localhost, 40404)
+listening..
+Accepted connection from (localhost, 40408)
+listening..
+Accepted connection from (localhost, 40412)
+listening..
+Accepted connection from (localhost, 40416)
+listening..
+Accepted connection from (localhost, 40420)
+listening..
+Accepted connection from (localhost, 40424)
+listening..
+Accepted connection from (localhost, 40428)
+listening..
+Accepted connection from (localhost, 40432)
+listening..
+Accepted connection from (localhost, 40436)
+listening..
+Accepted connection from (localhost, 40440)
+listening..
+Accepted connection from (localhost, 40444)
+listening..
+Accepted connection from (localhost, 40448)
+listening..
+Accepted connection from (localhost, 40452)
+listening..
+Accepted connection from (localhost, 40456)
+listening..
+Accepted connection from (localhost, 40460)
+listening..
+Accepted connection from (localhost, 40464)
+listening..
+Accepted connection from (localhost, 40468)
+listening..
+Accepted connection from (localhost, 40470)
+listening..
+Accepted connection from (localhost, 40472)
+listening..
+Accepted connection from (localhost, 40480)
+listening..
+Accepted connection from (localhost, 40484)
+listening..
+Accepted connection from (localhost, 40488)
+listening..
+Accepted connection from (localhost, 40492)
+listening..
+Accepted connection from (localhost, 40494)
+listening..
+Accepted connection from (localhost, 40500)
+listening..
+Accepted connection from (localhost, 40502)
+listening..
+Accepted connection from (localhost, 40504)
+listening..
+Accepted connection from (localhost, 40512)
+listening..
+Accepted connection from (localhost, 40516)
+listening..
+Accepted connection from (localhost, 40520)
+listening..
+Accepted connection from (localhost, 40524)
+listening..
+Accepted connection from (localhost, 40526)
+listening..
+Accepted connection from (localhost, 40528)
+listening..
+Accepted connection from (localhost, 40530)
+listening..
+Accepted connection from (localhost, 40532)
+listening..
+Accepted connection from (localhost, 40544)
+listening..
+Accepted connection from (localhost, 40546)
+listening..
+Accepted connection from (localhost, 40550)
+listening..
+Accepted connection from (localhost, 40552)
+listening..
+Accepted connection from (localhost, 40556)
+listening..
+Accepted connection from (localhost, 40558)
+listening..
+Accepted connection from (localhost, 40560)
+listening..
+Accepted connection from (localhost, 40562)
+listening..
+Accepted connection from (localhost, 40576)
+listening..
+Accepted connection from (localhost, 40578)
+listening..
+Accepted connection from (localhost, 40580)
+listening..
+Accepted connection from (localhost, 40584)
+listening..
+Accepted connection from (localhost, 40586)
+listening..
+Accepted connection from (localhost, 40590)
+listening..
+Accepted connection from (localhost, 40594)
+listening..
+Accepted connection from (localhost, 40596)
+listening..
+Accepted connection from (localhost, 40606)
+listening..
+Accepted connection from (localhost, 40610)
+listening..
+Accepted connection from (localhost, 40612)
+listening..
+Accepted connection from (localhost, 40614)
+listening..
+Accepted connection from (localhost, 40620)
+listening..
+Accepted connection from (localhost, 40624)
+listening..
+Accepted connection from (localhost, 40632)
+listening..
+Accepted connection from (localhost, 40634)
+listening..
+Accepted connection from (localhost, 40636)
+listening..
+Accepted connection from (localhost, 40638)
+listening..
+Accepted connection from (localhost, 40640)
+listening..
+Accepted connection from (localhost, 40652)
+listening..
+Accepted connection from (localhost, 40654)
+listening..
+Accepted connection from (localhost, 40656)
+listening..
+Accepted connection from (localhost, 40658)
+listening..
+= retrieving score 1609344855.9689422
+passed tests reported by browser: 6
+so you get 12 score
+Log:
+ Below are logs of failed tests:
+[0:14:11.254] --- Running [cache-concurrent]
+[0:14:11.260 info] step 0
+[0:14:11.269 debug] URL args for step 1 and step 3: [-16427736,-68937163,-54768896,-65545244,-32484693]
+[0:14:11.270 debug] URL args for step 4: [-87645338,-73453661,-87755945,-34415172,-11351123]
+[0:14:11.278 info] step 1
+[0:14:11.410 info] step 2
+[0:14:11.429 info] step 3
+[0:14:11.453 error] failed at step 3
+[0:14:11.456] TEST FINISHED. status = failed
+[0:14:11.607] --- Running [cache-lru]
+[0:14:11.609 info] step 0
+[0:14:11.617 debug] URL args for each image: [-78325223,-41281375,-81459213,-68336515,-24563235,-26647793,-28332247,-42539456,-66694792,-13834896,-27821855,-43781562,-19428697,-76928874,-26959736,-18547142,-52227149,-41564871,-62469336,-83313897,-77367535,-93985157,-89413532,-99327867,-14532941,-24364978,-43439318,-26455283,-31744149,-89255242]
+[0:14:11.619 info] step 1
+[0:14:11.873 info] step 2
+[0:14:11.880 info] step 3
+[0:14:11.894 error] failed at step 3
+[0:14:11.895] TEST FINISHED. status = failed
+[0:14:13.022] --- Running [robust-bad-request]
+[0:14:13.064 info] 1. POST http://pkunews.pku.edu.cn/
+[0:14:13.166 info] 2. HEAD http://pkunews.pku.edu.cn/
+[0:14:13.268 info] 3. GET https://pkunews.pku.edu.cn/
+[0:14:13.370 info] 4. GET http://127.0.0.1.nip.io:65432/
+[0:14:13.471 info] 5. GET http://maruyama.pico/
+[0:14:13.574 info] 6. GET http://pkunews.pku.edu.cn/LoremIpsum...
+[0:14:13.675 info] We will check if the proxy is still working after 2s
+[0:14:15.576 info] Finally, GET /cgi-bin/pingpong?31711951
+[0:14:15.580 error] TypeError: Failed to fetch
+[0:14:15.580] TEST FINISHED. status = failed
+[0:14:15.731] --- Running [robust-stream]
+[0:14:15.731 debug] URL args for time-consuming requests: ["83734447","99925194"]
+[0:14:15.732 debug] URL args for time-consuming requests after 1s: ["16274812","45879832"]
+[0:14:15.789 error] frame 0 (before URL change) loaded but it should not
+[0:14:15.789 error] Error: cannot get loaded document
+[0:14:15.790] TEST FINISHED. status = failed
+= finished 1609344856.0277116
+Killing tiny and proxy
+Real Pages: 12 / 20
+
+totalScore = 67 / 90
+
+{ "scores": {"Basic":40, "Concurrency":15, "Caching":0, "Real Pages":12},"scoreboard": [67, 40, 15, 0, 12]}
